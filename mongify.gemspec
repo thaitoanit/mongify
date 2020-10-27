@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.description = %q{Mongify allows you to map your sql data into a mongodb document database with a simple DSL.}
   s.required_ruby_version = ">= 1.8.7"
 
-  s.add_runtime_dependency('activerecord', ">= 4.2", "< 5.2.5")
+  s.add_runtime_dependency('activerecord', ">= 5.0", "< 6.1")
   s.add_runtime_dependency('activesupport', ">= 4.2", "< 5.2.5")
   s.add_runtime_dependency('mongo', "= 1.12.5")
   s.add_runtime_dependency('bson', "= 1.12.5")
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('yard', '~> 0.9.11')
   s.add_development_dependency('sqlite3', '>= 1.3')
   s.add_development_dependency('pg', '>= 0.17')
-  s.add_development_dependency('mysql2', '>= 0.4')
+  s.add_development_dependency('mysql2', '>= 0.4.4', '< 0.6.0')
   s.add_development_dependency('watchr', '>= 0.6')
   s.add_development_dependency('rake')
   s.add_development_dependency('jazz_fingers')
